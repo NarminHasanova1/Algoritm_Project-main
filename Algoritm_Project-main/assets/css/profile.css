@@ -1,0 +1,230 @@
+@import url(const.css);
+
+/* ======================= 
+        Profile Start
+=========================*/
+
+.pfp{
+    width: 50%;
+}
+
+.social-icons {
+    padding: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.facebook {
+    background: #4267B2;
+}
+
+.twitter {
+    background: #1DA1F2;
+}
+
+/* ======================= 
+        Profile End
+=========================*/
+
+/* ======================= 
+        Tabs start
+=========================*/
+
+.nav-tabs .nav-link {
+    width: 100%;
+    color: #333;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: lightblue;
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active:hover {
+    background-color:lightblue;
+}
+
+/* ======================= 
+        Tabs End
+=========================*/
+
+/* ============================================= 
+        Favourites and Recenly View Start
+===============================================*/
+
+.s-mg {
+    padding-bottom: 70px;
+}
+
+.eco .row>* {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.eco-img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eco-img:hover {
+    transform: scale(1.025);
+}
+
+.eco .modal-text {
+    position: absolute;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: lightblue;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background:lightblue;
+}
+
+/* ============================================= 
+        Favourites and Recenly View End
+===============================================*/
+
+/* ========================
+        Settings Start
+==========================*/
+
+.settings {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 2px 40px 2px;
+    height: 40px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.settings>* {
+    width: 100%;
+    color: dimgray;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.settings p{
+    font-weight: bold;
+}
+
+.settings i,.settings a{
+    color: var(--dark);
+}
+
+.editProfile input{
+    outline: 0;
+    width: 75%;
+}
+
+.settings>*:hover:not(.active) {
+    background-color: rgb(220, 220, 220);
+}
+
+.settings>.active {
+    background-color: lightblue;
+}
+
+.settings>.active:hover {
+    background-color:lightblue;
+}
+
+.settings>.active a {
+    color: var(--white);
+}
+
+.settings>.active i {
+    color: var(--white);
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+.climate-action-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.climate-action-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.climate-action-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+body {
+    background: #72c072;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: green
+}
+
+.profile-button {
+    background: green;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #46c546
+}
+
+.profile-button:focus {
+    background: green;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: green;
+    box-shadow: none
+}
+
+.back:hover {
+    color: green;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: green;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}

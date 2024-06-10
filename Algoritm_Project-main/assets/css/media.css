@@ -1,0 +1,426 @@
+@media (min-width:1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .start img {
+        width: calc(((100% - 940px) / 2) + 341px);
+        height: 750px;
+    }
+
+    .wrap {
+        width: 576px;
+    }
+
+    .start .line {
+        width: 116px;
+        margin-left: 16px;
+    }
+
+    .start .rectangle1 {
+        width: 325px;
+    }
+
+    .cell h1,
+    .cell-text .read,
+    .cell-text1 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .sec2 .shape {
+        width: 439px;
+        margin-left: 501px;
+    }
+
+    .sec2 .group {
+        width: 849px;
+    }
+
+    .sec2 .container-layout {
+        padding-left: 16px;
+    }
+
+    .sec2 .line {
+        margin-right: 936px;
+    }
+
+    .reviews .shape {
+        width: 444px;
+    }
+
+    .reviews .group {
+        width: 708px;
+    }
+
+    .reviews .container-layout {
+        padding-right: 49px;
+    }
+
+    .reviews .quote {
+        margin-top: 32px;
+        margin-left: 20px;
+    }
+
+    .reviews p,
+    .reviews h5 {
+        margin-left: 20px;
+    }
+
+    .col6 h2 {
+        margin-right: 112px;
+        margin-left: 68px;
+    }
+
+    .layout-text {
+        margin-left: 20px;
+    }
+
+    .rectangle {
+        width: 209px;
+    }
+
+    .col6 h2,
+    .col6 .sub,
+    .col6 a {
+        margin-left: 68px;
+    }
+
+    .col6 .sub2 {
+        margin-right: 63px;
+        margin-left: 68px;
+    }
+
+    .contact-area {
+        width: 45%;
+        padding: 3rem 4rem;
+        right: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .popup .content{
+        max-width: 650px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        z-index: 100;
+        height: 350px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    .start img {
+        width: calc(((100% - 720px) / 2) + 261px);
+        height: 1040px;
+    }
+
+    .wrap {
+        width: 441px;
+    }
+
+    .start .line {
+        width: 89px;
+        margin-left: 13px;
+    }
+
+    .start .rectangle1 {
+        width: 249px;
+    }
+
+    .cell h1,
+    .cell-text,
+    .read,
+    .cell-text1 {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    .sec2 .shape {
+        width: 336px;
+        margin-left: 384px;
+    }
+
+    .sec2 .group {
+        width: 651px;
+    }
+
+    .sec2 .container-layout {
+        padding-left: 13px;
+    }
+
+    .sec2 .line {
+        margin-right: 716px;
+    }
+
+    .reviews .shape {
+        width: 340px;
+    }
+
+    .reviews .group {
+        width: 543px;
+    }
+
+    .reviews .container-layout {
+        padding-right: 38px;
+    }
+
+    .col6 h2 {
+        margin-right: 86px;
+        margin-left: 52px;
+    }
+
+    .col6 .sub {
+        margin-right: 13px;
+        margin-left: 52px;
+    }
+
+    .rectangle {
+        width: 160px;
+        right: 28px;
+    }
+
+    .col6 a {
+        margin-right: 13px;
+        margin-left: 52px;
+    }
+
+    .col6 .sub2 {
+        margin-right: 48px;
+        margin-left: 52px;
+    }
+
+    .contact-area {
+        width: 50%;
+        padding: 2.5rem 3.5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width:768px) {
+
+    .start img {
+        width: calc(((100% - 540px) / 2) + 245px);
+        height: 1131px;
+    }
+
+    .wrap {
+        width: 413px;
+    }
+
+    .start .line {
+        width: 83px;
+        margin-left: 9px;
+    }
+
+    .start .rectangle1 {
+        width: 233px;
+    }
+
+    .size-50 {
+        max-width: 100%;
+    }
+
+    .cell h1,
+    .cell-text,
+    .read,
+    .cell-text1 {
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .sec2 .shape {
+        width: 252px;
+        margin-left: 288px;
+    }
+
+    .sec2 .group {
+        width: 488px;
+    }
+
+    .sec2 .container-layout {
+        padding-left: 9px;
+    }
+
+    .sec2 .line {
+        margin-right: 536px;
+    }
+
+    .reviews .height {
+        min-height: 470px;
+    }
+
+    .reviews .shape {
+        width: 319px;
+    }
+
+    .reviews .group {
+        width: 509px;
+    }
+
+    .reviews .container-layout {
+        padding-right: 28px;
+    }
+
+    .reviews p,
+    .reviews h5 {
+        margin-left: 0;
+    }
+
+    
+    .col6 h2 {
+        margin-right: 64px;
+        margin-left: 39px;
+    }
+
+    .col6 .sub {
+        margin-right: 9px;
+        margin-left: 39px;
+    }
+
+    .rectangle {
+        width: 150px;
+        right: 21px;
+    }
+
+    .col6 a {
+        margin-right: 9px;
+        margin-left: 39px;
+    }
+
+    .contact-area {
+        width: 65%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .container {
+        width: 340px;
+    }
+
+    .start img {
+        width: calc(((100% - 340px) / 2) + 206px);
+        height: 1131px;
+    }
+
+    .wrap {
+        width: 340px;
+    }
+
+    .start .line {
+        width: 70px;
+        margin-left: 6px;
+    }
+
+    .start .rectangle1 {
+        width: 196px;
+    }
+
+    .cell h1,
+    .cell-text,
+    .read,
+    .cell-text1 {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .sec2 .height {
+        min-height: 644px;
+    }
+
+    .sec2 .shape {
+        width: 220px;
+        margin-top: 143px;
+        margin-left: 120px;
+    }
+
+    .sec2 .group {
+        min-height: 515px;
+        width: 292px;
+        margin-top: -437px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .sec2 .container-layout {
+        padding-left: 20px;
+    }
+
+    .sec2 .line {
+        margin-top: -358px;
+        margin-right: 336px;
+        margin-bottom: 65px;
+    }
+
+    .reviews .height {
+        min-height: 600px;
+    }
+
+    .reviews .shape {
+        width: 268px;
+    }
+
+    .reviews .group {
+        width: 340px;
+    }
+
+    .reviews .container-layout {
+        padding-right: 18px;
+    }
+
+    .contact-area {
+        width: 75%;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .contact-area .submit {
+        padding: 0.6rem 1.1rem;
+    }
+
+    .contact-area .form input,
+    .contact-area .form textarea {
+        margin-bottom: 1rem;
+        padding: 0.7rem 0.5rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,686 @@
+@import url(const.css);
+
+.container {
+    padding: 0;
+}
+
+body {
+    color: #111111;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DAF9DA;
+}
+
+
+/* ---Section1 Start--- */
+
+.start {
+    position: relative;
+    z-index: -1;
+}
+
+.start img {
+    width: calc(((100% - 1140px) / 2) + 414px);
+    height: 708px;
+    object-fit: cover;
+    position: absolute;
+    left: auto;
+    right: 0;
+}
+
+.start content {
+    min-height: 708px;
+}
+
+.content::before {
+    content: '';
+    display: table;
+}
+
+.wrap {
+    width: 698px;
+    margin: 72px auto 72px 0;
+}
+
+.layout-col {
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.layout-col>* {
+    display: flex;
+    max-width: 100%;
+}
+
+.row>.size-30 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.layout-col>.size-30 {
+    flex: 30 0 50%;
+}
+
+.cell {
+    min-height: 280px;
+    position: relative;
+}
+
+.size-50 {
+    max-width: 50%;
+}
+
+.start .line {
+    width: 140px;
+    height: 9px;
+    transform-origin: left center 0;
+    margin: 25px auto 0 20px;
+    border: 9px solid #454545;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+
+.start .rectangle1 {
+    width: 394px;
+    height: 114px;
+    margin: 59px auto 0 0;
+    
+}
+
+.cell h1 {
+    line-height: 1.1em;
+    font-size: 6rem;
+    margin: -162px 20px 0;
+}
+
+.cell-text {
+    position: relative;
+    margin: 25px 20px 0;
+}
+
+.read {
+    margin: 30px 20px 25px;
+}
+
+a {
+    text-decoration-color: #fabd02;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 7px;
+    color: #111111;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration-color: #d39f01;
+}
+
+.cell-text1 {
+    position: relative;
+    color: #999;
+    padding: 10px 20px;
+    margin: 25px 20px;
+    border-left: 4px solid #66E564;
+}
+
+.size-font {
+    line-height: 1.5rem;
+}
+
+/* ---Section1 End--- */
+
+/* ---Section2 Start--- */
+
+.sec2::before {
+    content: '';
+    display: table;
+}
+
+
+.sec2 .height {
+    min-height: 501px;
+}
+
+.sec2 .shape {
+    height: 359px;
+    width: 532px;
+    margin: 71px 0 0 608px;
+}
+
+
+
+.sec2 .group {
+    min-height: 359px;
+    height: auto;
+    width: 1030px;
+    margin: -359px auto 0;
+}
+
+.sec2 .container-layout {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.sec2 h2 {
+    margin: 35px 0 0;
+    font-size: 2.25rem;
+    line-height: 1.1;
+}
+
+.sec2 p {
+    margin: 20px 0 35px;
+}
+
+.sec2 .line {
+    height: 200px;
+    margin: -280px 1136px 50px 0;
+    border-left: 4px solid #66E564;
+}
+
+/* ---Section2 End--- */
+
+/* ---Food Section Start--- */
+
+.s-mg {
+    padding-bottom: 70px;
+}
+
+.eco .row>* {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.eco-img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 300px;
+    transition: 0.3s;
+}
+
+.eco-img:hover {
+    transform: scale(1.025);
+}
+
+.eco .modal-text {
+    position: absolute;
+}
+
+/*Modal*/
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    top: 0;
+    opacity: 0;
+    z-index: -3;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-80px);
+    transition: all 0.3s;
+}
+
+.popup .content {
+    padding: 50px;
+    outline: 2px solid #fbe7e7;
+    outline-offset: -7px;
+    border-radius: 30px;
+    background-color: #fff2fb;
+    max-width: 800px;
+    height: fit-content;
+    transform: translateY(-80px);
+    transition: all 0.8s;
+}
+
+.popup.active {
+    opacity: 1;
+    z-index: 1000;
+    transform: translateY(0);
+}
+
+.popup.active .content {
+    transform: translateY(80px);
+}
+
+.popup .food-img {
+    max-height: 440px;
+    cursor: auto
+}
+
+.modal-text {
+    opacity: 0;
+}
+
+.popup .modal-text.active {
+    opacity: 1;
+}
+
+.popup .modal-text .name {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 1px;
+    color: #e13b15;
+}
+
+
+.popup .modal-text .price {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.close {
+    position: absolute;
+    display: block;
+    top: 11px;
+    right: 17px;
+    color: rgb(17, 16, 27);
+    font-size: 40px;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover {
+    transform: rotate(20deg) scale(1.2);
+    color: #d64c4c;
+}
+
+/* ---Food Section End--- */
+
+/* ---Menu Section Start--- */
+.menu .col-md-4 {
+    border: 15px solid transparent;
+}
+
+.menu .hover {
+    transition: all 0.3s;
+    transform: scale(1);
+    /* cursor: pointer; */
+}
+
+.menu .hover:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.1);
+}
+
+.menu-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.cat {
+    cursor: pointer;
+}
+
+.cat h3 {
+    font-size: 1.875rem;
+}
+
+.cat .text {
+    font-size: 0.925rem;
+}
+
+/* ---modal--- */
+.menu .menu-img {
+    display: none;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.menu .popup {
+    backdrop-filter: blur(0);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu .popup.active .content {
+    transform: translateY(50px);
+}
+
+.popup.active .menu-img {
+    display: block;
+}
+
+.menu-text {
+    font-style: italic;
+    padding: 1rem;
+    text-align: center;
+    color: #842029;
+}
+
+.order {
+    padding: 0.8rem 1.5rem;
+    border: navy;
+    border-radius: 30px;
+    background-color: #842029;
+    color: #c5a67c;
+    transition: 0.3s;
+}
+
+.order:hover {
+    background-color: #72121a;
+    color: #c5a67c;
+}
+
+/* ---Menu Section End--- */
+
+/* ---Col6 Section Start--- */
+
+.col6 .text {
+    margin-top: 11rem;
+}
+
+.col6 h2 {
+    font-size: 2.25rem;
+    margin: 0px 216px 0 83px;
+    margin-bottom: 60px;
+}
+
+.col6 .sub {
+    margin: 20px 20px 25px 83px;
+}
+
+.col6 .sub2 {
+    margin: 20px 76px 25px 83px;
+}
+
+
+.col6 a {
+    margin: 30px 0 0 83px;
+    text-decoration-color: #fabd02;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 7px;
+    color: #111111;
+    transition: 0.3s;
+    font-size: 0.925rem;
+}
+
+.col6 a:hover {
+    text-decoration-color: #d39f01;
+}
+
+.col6 .img1 {
+    background: url("https://i.pinimg.com/564x/3c/5c/85/3c5c85b86cb0bb71245a84d10d9f3093.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+.col6 .img2 {
+    background: url("https://i.pinimg.com/564x/cb/08/92/cb08925db63f83b1fdabac2d3e19e6c8.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+.col6 .img3 {
+    background: url("https://i.pinimg.com/564x/8f/7e/e1/8f7ee15826e45e5ae8594c4682d4ee9c.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+
+
+
+.col6 .img4 {
+    background-image: url("https://i.pinimg.com/736x/f0/6a/90/f06a90d4c45f24c0627d5acee269d8ad.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+.col6 .img5 {
+    background: url("https://cdn.solssmart.org/uploads/free-tree-society.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+.col6 .img6 {
+    background: url("https://i.pinimg.com/564x/2f/17/89/2f178931eb4d8e208ac4fcabd133cc65.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+
+/*Slider Start*/
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    min-height: 604px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 33.33%;
+    transition: 2s;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 50%;
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #161207;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #161207;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -33.33%;
+}
+
+#radio3:checked~.first {
+    margin-left: -66.67%;
+}
+
+#radio4:checked~.second {
+    margin-left: 0;
+}
+
+#radio5:checked~.second {
+    margin-left: -33.33%;
+}
+
+#radio6:checked~.second {
+    margin-left: -66.67%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 50%;
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid #c5a67c;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #c5a67c;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #c5a67c;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #c5a67c;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #c5a67c;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+    background: #c5a67c;
+}
+
+#radio6:checked~.navigation-auto .auto-btn6 {
+    background: #c5a67c;
+}
+
+/*Slider End*/
+
+/* ---Col6 Section End--- */
+
+/* ---Reviews Section Start--- */
+
+.reviews::before {
+    content: '';
+    display: table;
+}
+
+.reviews .height {
+    min-height: 517px;
+}
+
+.reviews .grey {
+    background-color: #9EF87C;
+}
+
+.reviews .shape {
+    width: 539px;
+    height: 356px;
+    margin: 81px 0 0 auto;
+}
+
+.reviews .group {
+    min-height: 347px;
+    width: 859px;
+    height: auto;
+    margin: -351px auto 50px 0;
+}
+
+.reviews .container-layout {
+    padding-right: 60px;
+}
+
+.reviews svg {
+    fill: green;
+}
+
+.reviews .quote {
+    display: block;
+    height: 64px;
+    width: 64px;
+    margin: 35px auto 0 84px;
+}
+
+.reviews p {
+    position: relative;
+    margin: 30px 60px 0;
+    font-size: 0.875rem;
+}
+
+.reviews h5 {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin: 20px 60px 0;
+}
+
+.reviews h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    position: relative;
+    margin: 4px 60px 35px;
+}
+
+/* ---Reviews Section End--- */
+
+/* ---Contact Section Start--- */
+.contact {
+    position: relative;
+    background: url("https://img.freepik.com/free-photo/environmental-conservation-garden-children_1150-15276.jpg?t=st=1717657415~exp=1717661015~hmac=722467a1d4ee3e6991d832b98b657fe17165497907b0d8f221efc5a73c94baaf&w=740") no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 720px;
+}
+
+.contact-area {
+    position: absolute;
+    border-radius: 0.25rem;
+    left: 100px; /* Updated from right: 100px; */
+    top: 70px;
+    background-color: #A3C2E7;
+    width: 40%;
+    padding: 3.5rem 4.5rem;
+}
+
+.contact-area h1 {
+    color: #c24d00;
+}
+
+.contact-area p {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    color: #d64c4c;
+    margin-bottom: 0;
+}
+
+.contact-area .form input,
+.contact-area .form textarea {
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 0.4rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+.contact-area .submit {
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    background-color: #c24d00;
+    transition: 0.3s;
+    color: white;
+}
+
+.contact-area .submit:hover {
+    background-color: #8f3900;
+}
+
+/* ---Contact Section End--- */
+
